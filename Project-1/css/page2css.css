@@ -1,0 +1,38 @@
+#Header{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100px;
+padding-bottom: 10%;
+}
+table{
+  margin-left: auto;
+    margin-right: auto;
+
+}
+tr{
+  text-align: center;
+}
+
+#form{
+
+  float: left;
+  width: 90%;
+  color: white;
+  background-color: black;
+}
+
+
+#links{
+
+  width: 50%;
+}
+
+.UserData{
+  background-color: black;
+}
+
+#aa{
+  top: 10%;
+}

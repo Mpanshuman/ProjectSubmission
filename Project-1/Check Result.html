@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Examination Page</title>
+    <link rel="stylesheet" href="css/page1css.css">
+  </head>
+  <body>
+    <div class="Toppage">
+    <table border="1" id = "StudentDetails">
+    <tr><th colspan="5" id="heading"> BIJU PATNAIK UNIVERSITY OF TECHNOLOGY, ODISHA</th></tr>
+    <tr><th colspan="5"><font color="red">STUDENTS RESULT SUMMARY</font></th></tr>
+      <tr>
+        <td>Exam Session:</td>
+        <td>Reg.No</td>
+        <td>DOB:</td>
+        <th colspan="2"></th>
+      </tr>
+      <tr>
+        <td><label for="exam" placeholder="Select Exam Session"></label>
+          <select  name="exam" id="exsession">
+            <option value="Select Exam Session">Select Exam Session</option>
+            <option value="odd2013">odd2013</option>
+            <option value="even2013">even2013</option>
+            <option value="even2014">even2014</option>
+            <option value="odd2014">odd2013</option>
+
+          </select>
+        </td>
+        <td><input type="text" name="RedgNO" id="RedgNO" placeholder="Enter RegiNO"></td>
+        <td><input type="date" id="birthday" name="birthday"></td>
+        <td id="btnsubmitcol"><input type="submit" id="btnsubmit" name="View Result" value="View Result" ></td>
+        <td id="btnresetcol"><input type="Reset" id="btnreset" name="Reset"></td>
+      </tr>
+    </table>
+    </div>
+    <div class="resultWithheld">
+    <table>
+      <tr>
+        <td>Result Withheld</td>
+      </tr>
+      <td></td>
+    </table>
+    </div>
+    <div class="BottomPage">
+    <table border="1" id="BottomTable">
+      <tr>
+        <td id="StudentHelp"><font color= "red">Backlog Detail;If Any: [ Explore Result History in  <a href="http://www.bputexam.in">http://www.bputexam.in </a> ]</th>
+      </tr>
+      <tr>
+        <td id="StudentEmail">For any query; Please email at : <a href="mailto:students@bput.ac.in"><u>students@bput.ac.in</u></a></td>
+      </tr>
+      <tr>
+        <td>
+          <ol id="termCond">
+            <li>The result is provisional</li>
+            <li>In case of any typological error or discrepancy , the student is required to report at their respective college for neccessary intimation to the University.</li>
+            <li>As per the provision of the Grading System of the University 'M' denotes MALPRACTICE (Grade Point 0) and 'S' denotes  ABSENT (Grade Point 0) and <b>F Grade in (Int=Internal, Ext=External,Pr=Practical)</b>.</li>
+            <li>The SGPA show for the subjects displayed in this page.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td> <img src="sign.jpg"></td>
+      </tr>
+      <tr>
+        <td><b>Director, Examinations</b></td></tr>
+        <tr>
+          <td><p>Disclaimer:</p>
+            <ol id="BottomtermCond">
+              <li>The results published are provisional and subject to change after post publication scruitny by BPUT.</li>
+              <li>The university shall not be held   responsible for any inadvertent error that may have crept into the results being displayed.</li>
+            </ol>
+          </td>
+        </tr>
+    </table>
+
+
+
+
+</div>
+
+  </body>
+</html>

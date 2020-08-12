@@ -1,0 +1,93 @@
+.Toppage{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.resultWithheld{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+.BottomPage{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+#exsession{
+  width: 97%;
+}
+#heading{
+  font-size: 20px;
+}
+#RedgNO{
+  width: 97%;
+}
+#birthday{
+  width: 98%;
+}
+#StudentHelp{
+  text-align: center;
+  font-size: 18px;
+}
+#termCond{
+  background-color: red;
+}
+#BottomtermCond{
+  background-color: blue;
+}
+#StudentEmail{
+  color: blue;
+  font-size: 12px;
+}
+
+table{
+  border-collapse: collapse;
+}
+#StudentDetails{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  border: 1px solid black;
+}
+
+#BottomTable{
+  position: relative;
+  width: 100%;
+  height: 20%;
+
+  border: 1px solid black;
+}
+td{
+
+  text-align: left;
+  padding-left: 5px;
+  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+th{
+  text-align: center;
+  padding: 10px;
+}
+
+tr{
+  padding: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+#btnsubmit{
+  background-color: blue;
+  color: white;
+  align-items: center;
+
+}
+#btnreset{
+  align-items: center;
+  background-color: Red;
+  color: white;
+}
