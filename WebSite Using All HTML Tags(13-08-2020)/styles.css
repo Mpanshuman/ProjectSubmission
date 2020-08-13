@@ -19,7 +19,6 @@
   background-color: green;
   margin: auto;
   width: 20%;
-  padding-top: 30%;
   align-content: center;
 
 }
@@ -29,7 +28,6 @@
   background-color: red;
   margin: auto;
   width: 20%;
-  padding-top: 30%;
 }
 
 .BottomPart{
@@ -42,9 +40,23 @@
   padding-bottom: 2%;
   padding-top: 2%;
 }
+
+.Buttons{
+  text-align: center;
+  color: black;
+}
+
+.UserData{
+  border: 2px solid black;
+}
+#regButton{
+  background-color: white;
+  border: 1px solid black;
+
+}
 #ItemList{
-  margin: 0px;
-  
+  margin-bottom: 10%;
+
 }
 h3{
   text-align: left;
