@@ -13,6 +13,12 @@
 
 }
 
+.MiddlePage{
+  background-color: #ff99ff;
+  margin: auto;
+  width: 50%;
+}
+
 .LeftSide{
   float: left;
   color: red;
@@ -60,4 +66,18 @@
 }
 h3{
   text-align: left;
+}
+table{
+  text-align: center;
+  margin: auto;
+  color: white;
+  border: 2px solid black;
+}
+img{
+  margin-top: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-bottom: 10%;
 }
