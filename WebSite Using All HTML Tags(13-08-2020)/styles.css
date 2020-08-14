@@ -27,6 +27,7 @@
   width: 20%;
   align-content: center;
   clear: both;
+  margin-top: 2%;
 
 }
 
@@ -35,6 +36,7 @@
   background-color: red;
   margin: auto;
   width: 20%;
+  margin-top: 2%;
 }
 
 .BottomPart{
@@ -104,4 +106,7 @@ ul{
 li{
   border: 1px solid black;
   width: 60%;
+}
+figcaption{
+  text-align: center;
 }
