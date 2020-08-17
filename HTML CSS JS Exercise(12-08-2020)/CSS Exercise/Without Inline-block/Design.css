@@ -22,7 +22,7 @@
   width: 25%;
   float: left;
   background-color: yellow;
-  padding-bottom: 27.2%;
+  padding-bottom: 28.85%;
   box-sizing: border-box;
 
 }
@@ -32,7 +32,7 @@
   background-color: green;
   float: left;
   width: 25%;
-  padding-bottom: 19.9%;
+  padding-bottom: 20.67%;
   box-sizing: border-box;
   border: 1px solid red;
 }
@@ -45,6 +45,7 @@
   margin-top: 32.5%;
   box-sizing: border-box;
   border: 1px solid red;
+  clear: both;
 
 }
 

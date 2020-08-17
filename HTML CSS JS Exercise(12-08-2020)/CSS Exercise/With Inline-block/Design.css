@@ -1,0 +1,70 @@
+.Content-Container{
+  margin: auto;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.left_Bar{
+  width: 29%;
+  display: inline-block;
+  height: 90%;
+  background-color: yellow;
+  float: left;
+  padding-bottom: 60%;
+  border: 1px solid black;
+  text-align: center;
+
+}
+
+.right_Bar{
+  background-color: green;
+  float: left;
+  width: 69.98%;
+  display: inline-block;
+  height: 90%;
+  border: 1px solid black;
+  padding-bottom: 35.1%;
+
+}
+
+
+.footer{
+  display: block;
+  width: 50%;
+  background-color: blue;
+  text-align: center;
+  clear: both;
+  font-size: 25px;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.Banner{
+  margin-top: 30%;
+  margin-left: 5%;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 2em;
+  width: 30%;
+}
+
+.Block{
+  margin-left: 5%;
+  text-align: center;
+  padding: 2em;
+  width: 15%;
+  border: 1px solid black;
+  display: inline-block;
+}
+.Bar_Content{
+  margin-top: 70%;
+}
+
+img{
+  margin: auto;
+  display: block;
+  width: 50%;
+  border: 1px solid red;
+}
