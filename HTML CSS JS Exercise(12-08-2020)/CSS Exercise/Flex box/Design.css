@@ -1,0 +1,76 @@
+.logo{
+  display: flex;
+  width: 100%;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+  .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 100%;
+ 
+  }
+.Left_Side{
+  display: flex;
+  background-color: #ff99ff;
+  height: 80vh;
+  width: 20%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.Right_Side{
+  height: 80vh;
+  width: 80%;
+
+}
+.Border,.Block{
+  background-color: grey;
+  box-sizing: border-box;
+  padding: 6%;
+  justify-content: space-around;
+
+}
+.Border{
+  margin-top: 10vh;
+  text-align: center;
+  width: 46%;
+  margin-left: 2vw;
+}
+.Block{
+  margin-top: 5vh;
+  text-align: center;
+  width: 30%;
+  margin-left: 2vw;
+}
+
+.Banner{
+  display: flex;
+  flex-direction: row;
+
+}
+.BlocK{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer{
+  display: flex;
+  background-color: lightblue; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 10vh;
+}
+.header_item {
+  margin-left: 3%;
+  border: 2px solid blue;
+  padding-right: 2%;
+  border-radius: 25px;
+  text-align: center;
+}
