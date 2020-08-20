@@ -1,0 +1,91 @@
+.Main{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.3fr 3fr 0.3fr;
+  height: 100vh;
+  grid-template-areas:"logo logo"
+                      "left_Bar right_Bar"
+                      "footer footer";
+}
+
+.logo{
+  display: flex;
+  background-color: yellow;
+  grid-area: logo;
+}
+.header_item {
+  margin-left: 3%;
+  border: 2px solid blue;
+  padding-right: 2%;
+  border-radius: 25px;
+  text-align: center;
+}
+.left_Bar{
+  background-color: lightblue;
+  grid-area: left_Bar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.right_Bar{
+  background-color: #A2BBBB;
+  grid-area: right_Bar;
+  box-sizing: border-box;
+
+}
+.Banner, .Block{
+  background-color: #474A4A;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 20%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.Block{
+  padding: 30%;
+}
+.Banner_Class{
+  margin-top: 5vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2vw;
+}
+
+
+.Block_Class{
+    display: grid;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    grid-column-gap: 2vw;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ba1{
+  grid-column: 1/2;
+}
+.ba2{
+  grid-column: 2/2;
+}
+
+.bl1{
+  grid-column: 1/2;
+}
+
+.bl2{
+  grid-column: 2/3;
+}
+.bl3{
+  grid-column: 3/3;
+}
+
+.footer{
+  display: flex;
+  background-color: blue;
+  grid-area: footer;
+  align-items: center;
+  justify-content: center;
+}
