@@ -64,28 +64,8 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.ba1{
-  grid-column: 1/2;
-}
-.ba2{
-  grid-column: 2/2;
-}
-
-.bl1{
-  grid-column: 1/2;
-}
-
-.bl2{
-  grid-column: 2/3;
-}
-.bl3{
-  grid-column: 3/3;
-}
 
 .footer{
-  display: flex;
   background-color: blue;
   grid-area: footer;
-  align-items: center;
-  justify-content: center;
 }
