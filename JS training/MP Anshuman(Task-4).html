@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Sasta Calculator</title>
+		<style media="screen">
+
+			#Heading{
+				margin-top: 20px;
+				text-align: center;
+				font-weight: bold;
+				font-size: 1.3em;
+				border: 1px solid black;
+				border-radius: 5px 5px 0px 0px;
+			}
+			#resultHeading{
+				text-align: center;
+			}
+			#num1{
+				margin-top: 20px;
+				margin-bottom: 5px;
+				border: none;
+				border-bottom: 1px solid black;
+				padding: 5px 5px;
+			}
+			#num2{
+				border: none;
+				border-bottom: 1px solid black;
+				padding: 5px 5px;
+			}
+			#ShowResult{
+				margin-top: 10px;
+			}
+			#para1{
+				text-align: center;
+			}
+			#btn-smt{
+			background-color: rgb(0, 102, 255);
+		  border: none;
+		  color: white;
+		  padding: 5px 5px;
+		  text-decoration: none;
+		  margin: 4px 2px;
+		  cursor: pointer;
+			}
+			.container{
+				border: 1.5px solid black;
+				width: 35%;
+				margin: auto;
+			}
+			.DataEntry{
+				margin: auto;
+				width: 80%;
+			}
+			.DataForm{
+				display: flex;
+				flex-direction: column;
+
+			}
+			.Operations{
+				margin: auto;
+				display: flex;
+				flex-direction: row;
+				width: 80%;
+				justify-content: space-around;
+				align-items: center;
+
+			}
+			.operation{
+				margin-top: 20px;
+			}
+
+			.Result{
+				margin-top: 10px;
+				display: flex;
+				height: 30px;
+				justify-content: center;
+				align-items: center;
+			}
+			.ShowResult{
+				border: 1.5px solid black;
+				width: 36.5%;
+				margin: auto;
+			}
+			ul{
+				list-style: none;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset class="container">
+		<legend id="Heading">Sasta Calculator</legend>
+
+
+		<div class="DataEntry">
+
+			<form class="DataForm" action="" method="post">
+
+
+
+					<input type="number" name="number1" id='num1' placeholder="Enter First Number" required>
+					<input type="number" name="number2" id="num2" placeholder="Enter Second Number" required>
+
+			</form>
+
+		</div>
+
+		<div class="Operations">
+			<span><input type="checkbox" name="addition" value="addition" class="operation">addition</span>
+			<span><input type="checkbox" name="subtraction" value="subtraction" class="operation">subtraction</span>
+			<span><input type="checkbox" name="multiplication" value="multiplication" class="operation">multiplication</span>
+			<span><input type="checkbox" name="division" value="division" class="operation">division</span>
+		</div>
+
+		<div class="Result">
+			<button type="button" name="submit" id="btn-smt"onclick="printResult()">Submit</button>
+		</div>
+
+		</fieldset>
+		<div id="ShowResult" class="ShowResult">
+			<p id="para1"><strong>Please select the Operations u want to perform</strong></p>
+		</div>
+
+		<script type="text/javascript">
+			function add(){
+				var num1 = document.getElementById('num1').value
+				var num2 = document.getElementById('num2').value
+					return parseFloat(num1)+parseFloat(num2)
+			}
+			function sub(){
+				var num1 = document.getElementById('num1').value
+				var num2 = document.getElementById('num2').value
+					return parseFloat(num1)-parseFloat(num2)
+			}
+			function mul(){
+				var num1 = document.getElementById('num1').value
+				var num2 = document.getElementById('num2').value
+					return parseFloat(num1)*parseFloat(num2)
+			}
+			function div(){
+				var num1 = document.getElementById('num1').value
+				var num2 = document.getElementById('num2').value
+				if(num2 == 0){
+					//alert("Denominator can't be 0")
+					return 'Not defined'
+				}
+				else{
+					return parseFloat(num1)/parseFloat(num2)
+				}
+
+			}
+
+			function selectOperation(){
+				var operation_obj = {'addition':add(),'subtraction':sub(),'multiplication':mul(),'division':div()}
+				var answer_list = []
+				var options_list = []
+				var options=document.getElementsByClassName('operation')
+				for(var i=0; i<options.length; i++){
+					if(options[i].checked){
+						answer_list.push(operation_obj[options[i].value])
+						options_list.push(options[i].value)
+					}
+				}
+
+				return [options_list,answer_list]
+		}
+
+		function Result(){
+			option_check = selectOperation()
+			if(option_check[0].length == 0){
+				alert("Please select an operation")
+
+			}
+			else if(isNaN(option_check[1][0])){
+				alert("Please Enter both the numbers")
+			}
+		else {
+			return option_check
+		}
+
+		}
+
+		function printResult(){
+			option_check = Result()
+			console.log(option_check)
+			var division1 = document.getElementById("ShowResult")
+			heading ="<h3 id='resultHeading'><u>Result</u></h3>"
+			list = '<ul>'
+			for(var i = 0, j = 0;i<option_check[0].length;i++){
+				list += `<li>${option_check[j][i]} = ${option_check[j+1][i]}</li>`
+			}
+			list += '</ul>'
+			if(option_check[0].length > 0){
+			division1.innerHTML = heading+list
+		}
+
+		}
+		</script>
+	</body>
+</html>

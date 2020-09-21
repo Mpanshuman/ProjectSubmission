@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignmet 1</title>
+	<style media="screen">
+		table{
+			margin: auto;
+		}
+		tr,td,th{
+			padding: 20px;
+		}
+	</style>
+
+	<script type="text/javascript">
+	function grade(mark){
+  if(mark>= 250){
+    return 'A'
+  }
+  else if(mark >=200){
+    return 'B'
+  }
+  else if(mark >=150){
+    return 'C'
+  }
+  else if(mark >=100){
+    return 'D'
+  }
+  else if(mark >=50){
+    return 'E'
+  }
+  else{
+    return 'F'
+  }
+
+}
+
+const student_list = [
+  {
+  name: 'A',
+  mark: {
+    Math: 90,
+    Science: 88,
+    IT: 75
+  }
+},
+{
+  name: 'D',
+  mark: {
+    Math: 30,
+    Science: 11,
+    IT: 10
+  }
+},
+{
+  name: 'B',
+  mark: {
+    Math: 72,
+    Science: 55,
+    IT: 87
+  }
+},
+{
+  name: 'C',
+  mark: {
+    Math: 80,
+    Science: 95,
+    IT: 88
+  }
+}]
+
+const studentmark = []
+for(var i=0;i<student_list.length;i++){
+
+ var y = [student_list[i].mark]
+var totalmark = y.reduce(
+ (total,element)=>total+element.Math+element.Science+element.IT,0
+);
+
+studentmark.push({name:student_list[i].name,marks:totalmark,grade:grade(totalmark)})
+console.log(`${studentmark[i].name} got ${studentmark[i].marks} Marks with ${studentmark[i].grade} Grade.`)
+}
+	</script>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>-</th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+			<th>6</th>
+		</tr>
+			<tr>
+				<td>1</td>
+				<td rowspan="4">A</td>
+				<td colspan="4">B</td>
+				<td rowspan="3">G</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>C</td>
+				<td rowspan="3">E</td>
+				<td rowspan="2" colspan="2">F</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td rowspan="2">D</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td colspan="3">H</td>
+			</tr>
+
+	</table>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Sasta Calculator</title>
+		<style media="screen">
+		#content{
+			border: 1px solid black;
+		}
+
+		#data{
+			border: 1px solid blue;
+			margin: auto;
+			width: 70%;
+		}
+		ul{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		</style>
+	</head>
+	<body>
+		<div id="content">
+
+		</div>
+		<script type="text/javascript">
+		var data = [
+					{"name":"abcd","id":"259","title":"hiii","description":"Helloooooooo","timestamp":"2020-05-01 13:08:33"},
+					{"name":"abcd","id":"255","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-20 03:31:30"},
+					{"name":"abcd","id":"253","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:55"},
+					{"name":"abcd","id":"252","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:48"},
+					{"name":"abcd","id":"251","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:47"},
+					{"name":"abcd","id":"250","title":"hiii","description":"melodi inti chocolaty Kyu hey","timestamp":"2020-04-13 10:07:37"},
+					{"name":"abcd","id":"249","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:36"},
+					{"name":"abcd","id":"248","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:35"},
+					{"name":"abcd","id":"247","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:33"},
+					{"name":"abcd","id":"245","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:31"},
+					{"name":"abcd","id":"244","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:30"},
+					{"name":"abcd","id":"243","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:29"},
+					{"name":"abcd","id":"242","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:27"},
+					{"name":"abcd","id":"241","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:23"},
+					{"name":"abcd","id":"240","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:22"},
+					{"name":"abcd","id":"239","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:21"},
+					{"name":"abcd","id":"238","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:19"},
+					{"name":"abcd","id":"236","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:17"},
+					{"name":"abcd","id":"235","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:16"},
+					{"name":"abcd","id":"234","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:12"},
+					{"name":"abcd","id":"232","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:05"},
+					{"name":"abcd","id":"231","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:04"},
+					{"name":"abcd","id":"230","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:07:03"},
+					{"name":"abcd","id":"229","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:59"},
+					{"name":"abcd","id":"228","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:57"},
+					{"name":"abcd","id":"226","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:56"},
+					{"name":"abcd","id":"225","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:56"},
+					{"name":"abcd","id":"224","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:55"},
+					{"name":"abcd","id":"223","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:54"},
+					{"name":"abcd","id":"222","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:53"},
+					{"name":"abcd","id":"221","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:53"},
+					{"name":"abcd","id":"220","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:52"},
+					{"name":"abcd","id":"219","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:51"},{"name":"abcd","id":"217","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:50"},{"name":"abcd","id":"215","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:49"},{"name":"abcd","id":"214","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:48"},{"name":"abcd","id":"213","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:47"},{"name":"abcd","id":"212","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:46"},{"name":"abcd","id":"211","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:45"},{"name":"abcd","id":"210","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:43"},{"name":"abcd","id":"209","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:42"},{"name":"abcd","id":"208","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:42"},{"name":"abcd","id":"207","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:41"},{"name":"abcd","id":"206","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:40"},{"name":"abcd","id":"205","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:40"},{"name":"abcd","id":"204","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:39"},{"name":"abcd","id":"203","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:38"},{"name":"abcd","id":"202","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:37"},{"name":"abcd","id":"201","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:36"},{"name":"abcd","id":"200","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:35"},{"name":"abcd","id":"199","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:34"},{"name":"abcd","id":"198","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:33"},{"name":"abcd","id":"197","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:32"},{"name":"abcd","id":"196","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:31"},{"name":"abcd","id":"194","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:29"},{"name":"abcd","id":"193","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:29"},{"name":"abcd","id":"192","title":"hiii","description":"yehh","timestamp":"2020-04-13 10:06:29"},{"name":"abcd","id":"191","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:28"},{"name":"abcd","id":"190","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:27"},{"name":"abcd","id":"188","title":"hiii","description":"yehh","timestamp":"2020-04-13 10:06:25"},{"name":"abcd","id":"189","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:25"},{"name":"abcd","id":"186","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:23"},{"name":"abcd","id":"185","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:22"},{"name":"abcd","id":"184","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:21"},{"name":"abcd","id":"183","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:20"},{"name":"abcd","id":"182","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:19"},{"name":"abcd","id":"180","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:18"},{"name":"abcd","id":"179","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:17"},{"name":"abcd","id":"178","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:15"},{"name":"abcd","id":"177","title":"Dance","description":"Fit","timestamp":"2020-04-13 10:06:14"},{"name":"abcd","id":"176","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:10"},{"name":"abcd","id":"174","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:06:06"},{"name":"abcd","id":"173","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:05:59"},{"name":"abcd","id":"172","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:05:56"},{"name":"abcd","id":"171","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:05:48"},{"name":"abcd","id":"170","title":"hiii","description":"yehh","timestamp":"2020-04-13 10:05:43"},{"name":"abcd","id":"169","title":"hiii","description":"Helloooooooo","timestamp":"2020-04-13 10:05:28"}]
+					get_id = document.getElementById('content');
+					listOfPeople = "<div id= 'userData'>"
+					data.forEach(
+						e => listOfPeople += `<div id='data'><li> ID: ${data.id}</li> <li> Name: ${data.name}</li> <li> Title: ${data.title}</li> <li> Description: ${data.description}</li> <li> Timestamp: ${data.timestamp}</li> </div>`
+					);
+					listOfPeople += "</div>"
+					get_id.innerHTML = listOfPeople
+				</script>
+	</body>
+</html>
